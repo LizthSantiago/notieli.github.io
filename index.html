@@ -1,0 +1,157 @@
+<html> 
+
+
+<body>
+<center><table border="1"></center>
+
+ <tr><td colspan="5"><center><img src="Encabezado.png"  width="800" height="150"></center></td></tr>
+
+<td colspan="5"><center><img src="img.jpg"  width="800" height="100"></center></td></tr>
+<tr>
+
+ <td width="70" height="43"> 
+<center><a href="cecytem.html"><img src="escuela.png"alt= width="70" height="43">
+<center><a href="mision.html"><img src="imagen14.png"alt= width="70" height="43">
+<center><a href="vicion y objetivos.html"><img src="imagen23.png"alt= width="70" height="43">
+<center><a href="historia.html"><img src="imagen24.png"alt= width="70" height="43">
+<center><a href="ubic.html"><img src="imagen25.png"alt= width="70" height="43">
+<center><a href="organigrama.html"><img src="ma.png"alt= width="70" height="43">
+
+
+
+
+</td>
+
+
+<td colspan ="2"><font size="2"><center>Colegio De Estudios Científicos Y Tecnológicos Del Estado De México <br></br>
+<font size="2">Portafolio de Evidencia  1 parcial<br></br>
+<font size="2"><strong>Modulo lll </strong>Desarrrolla aplicaciones web<br></br>
+<font size="2"><strong>Submódulo ll </strong>Desarrolla aplicaciones que se ejecutan en el cliente<br></br>
+<font size="2"><strong>Submódulo lll</strong> Desarrolla aplicaciones que se ejecutan en el servidor<br></br>
+<font size="2"><strong>Alumno</strong>Elizabeth Santiago de la Cruz N.L 36  Grupo:402<br></br>
+<font size="2">Carrera: Técnico en programación<br>2024 – 2024      5 – Marzo del 2024<br></center></td>
+ <td width="200"> <font color="black" size="2" face="tahoma">
+<script type="text/javascript">
+    function greeting()
+{
+   var today = new Date();
+   var hrs = today.getHours();
+   document.writeln("<CENTER>");
+  // document.write("<H1>Buen");
+   if (hrs < 6)
+      document.write("");
+   else if (hrs < 12)
+      document.write("");
+   else if (hrs <= 18)
+      document.write("");
+   else
+      document.write("");
+   document.writeln("</H1>");
+   //document.write("Ingresaste a esta pagina el ");
+   dayStr = today.toLocaleString();
+   //document.write(dayStr);
+   document.writeln("</CENTER>");
+}
+function montharr(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11)
+{
+   this[0] = m0;
+   this[1] = m1;
+   this[2] = m2;
+   this[3] = m3;
+   this[4] = m4;
+   this[5] = m5;
+   this[6] = m6;
+   this[7] = m7;
+   this[8] = m8;
+   this[9] = m9;
+   this[10] = m10;
+   this[11] = m11;
+}
+function calendar()
+{
+   var monthNames = "EneFebMarAbrMayJunJulAgoSepOctNovDic";
+   var today = new Date();
+   var thisDay;
+   var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+   year = today.getYear() ;
+   thisDay = today.getDate();   
+   if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+   monthDays[1] = 29;
+   nDays = monthDays[today.getMonth()];
+   firstDay = today;
+   firstDay.setDate(1); // works fine for most systems
+   testMe = firstDay.getDate();
+   if (testMe == 2)
+   firstDay.setDate(0);    
+   startDay = firstDay.getDay();
+   document.writeln("<CENTER>");
+   document.write("<TABLE BORDER>");
+   document.write("<TR><TH COLSPAN=10>");
+   document.write(monthNames.substring(today.getMonth() * 3,
+   (today.getMonth() + 1) * 3));
+   document.write(". ");
+   document.write(year);
+   document.write("<TR><TH>D<TH>L<TH>M<TH>M<TH>J<TH>V<TH>S");
+   document.write("<TR>");
+   column = 0;
+   for (i=0; i<startDay; i++)
+   {
+   document.write("<TD>");
+   column++;
+   }
+   for (i=1; i<=nDays; i++)
+   {
+   document.write("<TD>");
+   if (i == thisDay)
+   document.write("<FONT COLOR=\"blue\"><b>")
+   document.write(i);
+   if (i == thisDay)
+   document.write("</b></FONT>")
+   column++;
+   if (column == 7)
+   {
+   document.write("<TR>"); 
+   column = 0;
+   }
+   }
+   document.write("</TABLE>");
+   document.writeln("</CENTER>");
+}
+   greeting();
+   document.write("</br>");
+   calendar();
+   document.write("");
+   </script>
+<script>
+function limpiarCeldas(){
+<center>documet.getElementById("USUARIO:").innerText="";</center>
+documet.getElementById("CONTRASEÑA:").innerText="";
+}
+</script>
+
+<script>
+function usrpas(){
+if(document.form1.txt.value=="Lizth" && document.form1.password.value=="fineLIN3")
+{window.location="Menuu.html"}
+else {alert("Ingreso denegado, vuelva a intentarlo por favor.☺")}
+}
+document.oncontextmenu=new Fuction("return false");
+
+</script>
+
+<form name="form1">
+<center><strong>Usuario</center></strong><input type="text" name="txt" placeholder="usuario"><br></br>
+<center><strong>Contraseña</center></strong><input type="password" name="password" placeholder="Contraseña"><br></br>
+<input type="button" value="Iniciar" onclick="usrpas()">
+<button onclick="limpiarCeldas()">Limpiar</button>
+
+</td></tr>
+
+</table>
+<img src="pie.JPG"alt= width="70" height="43">
+
+<center><strong><font face ="Arial"><font size="2"> @Elizabeth Santiago 2024 C.P.50770 <br>
+Sin la autorisacion los derechos de la pagina quedan protegidos por el autor  </font size></font face ></font face>
+</body>
+</html>
+
